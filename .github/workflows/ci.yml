@@ -1,0 +1,33 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Run format checkers, security scanners, spellchecking and validation.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v3
+      - name: Setup pnpm.
+        uses: pnpm/action-setup@v2
+      - name: Setup node.
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies.
+        run: pnpm install --frozen-lockfile
+      - name: Execute audit-ci scanner.
+        run: npx audit-ci
+      - name: Check code format.
+        run: pnpm fmt:check
+      - name: Spellcheck code-base.
+        run: pnpm spellcheck
+      - name: Validate all tsconfig files.
+        run: pnpm validate

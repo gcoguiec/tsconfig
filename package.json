@@ -6,11 +6,13 @@
     "fmt": "prettier --write \"./**/*.{json,md}\"",
     "fmt:check": "prettier --list-different \"./**/*.{json,md}\"",
     "pub": "pnpm publish -r --access public",
-    "spellcheck": "cspell --config=.cspell.json \"**/*.md\""
+    "spellcheck": "cspell --config=.cspell.json \"**/*.md\"",
+    "validate": "node scripts/validate.mjs"
   },
   "devDependencies": {
     "cspell": "^8.7.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "tsconfck": "^3.0.3"
   },
   "volta": {
     "node": "22.1.0",

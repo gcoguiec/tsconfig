@@ -14,10 +14,17 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
+      tsconfck:
+        specifier: ^3.0.3
+        version: 3.0.3
 
   packages/tsconfig: {}
 
-  packages/tsconfig-vite-vue: {}
+  packages/tsconfig-vite-vue:
+    dependencies:
+      '@gcoguiec/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
 
 packages:
 
@@ -477,6 +484,16 @@ packages:
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
+
+  tsconfck@3.0.3:
+    resolution: {integrity: sha512-4t0noZX9t6GcPTfBAbIbbIU4pfpCwh0ueq3S4O/5qXI1VwK1outmxhe9dOiEWqMz3MW2LKgDTpqWV+37IWuVbA==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    peerDependencies:
+      typescript: ^5.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   type-fest@1.4.0:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
@@ -966,6 +983,8 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  tsconfck@3.0.3: {}
 
   type-fest@1.4.0: {}
 
