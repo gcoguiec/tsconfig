@@ -8,10 +8,10 @@
 </p>
 <p align="center">
   <a href="https://www.npmjs.com/package/@gcoguiec/tsconfig">
-    <img src="https://img.shields.io/github/package-json/v/gcoguiec/tsconfig-vite-vue?filename=packages%2Ftsconfig%2Fpackage.json&style=flat-square" alt="Version"/>
+    <img src="https://img.shields.io/github/package-json/v/gcoguiec/tsconfig?filename=packages%2Ftsconfig%2Fpackage.json&style=flat-square" alt="Version"/>
   </a>
   <a href="https://github.com/gcoguiec/tsconfig/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/gcoguiec/tsconfig-vite-vue/ci.yml?branch=main&label=ci&style=flat-square" alt="CI Status"/>
+    <img src="https://img.shields.io/github/actions/workflow/status/gcoguiec/tsconfig/ci.yml?branch=main&label=ci&style=flat-square" alt="CI Status"/>
   </a>
 </p>
 
