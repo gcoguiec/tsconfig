@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en-US",
+  "ignorePaths": [
+    "**/**/CHANGELOG.md",
+    "**/**/LICENSE.md",
+    "**/*.json",
+    ".cspell.json"
+  ],
+  "dictionaries": ["softwareTerms", "en_US", "misc"],
+  "words": ["gcoguiec"]
+}
