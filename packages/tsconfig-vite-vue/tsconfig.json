@@ -1,0 +1,12 @@
+{
+  "extends": ["@gcoguiec/tsconfig"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM", "DOM.Iterable"],
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["dist", "node_modules"]
+}

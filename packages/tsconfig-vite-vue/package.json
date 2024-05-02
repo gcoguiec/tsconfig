@@ -1,0 +1,31 @@
+{
+  "name": "@gcoguiec/tsconfig-vite-vue",
+  "version": "1.0.0",
+  "description": "gcoguiec's reusable and strict Vite+Vue tsconfig.",
+  "license": "BSD-2-Clause",
+  "author": {
+    "name": "Guillaume 'Yugo' Coguiec",
+    "email": "mail@gcoguiec.com",
+    "url": "https://github.com/gcoguiec/"
+  },
+  "files": [
+    "tsconfig.json"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcoguiec/tsconfig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gcoguiec/tsconfig/issues"
+  },
+  "homepage": "https://github.com/gcoguiec/tsconfig/tree/main/packages/tsconfig-vite-vue",
+  "keywords": [
+    "tsconfig",
+    "vite",
+    "vue"
+  ],
+  "dependencies": {
+    "@gcoguiec/tsconfig": "workspace:*"
+  }
+}
